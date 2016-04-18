@@ -29,6 +29,8 @@
     
 然后注销，登入，在输入法里选上Rime，点部署/Deploy，过一会儿（搞不好会）提示成功，就能用了。
 
+记得在`xinitrc`或者其他什么地方加上`ibus-daemon -drx`。
+
 ## 引用来源
 
 词库：[http://tieba.baidu.com/p/3974457224](http://tieba.baidu.com/p/3974457224)
