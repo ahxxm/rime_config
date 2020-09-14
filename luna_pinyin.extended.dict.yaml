@@ -14,7 +14,7 @@
 
 ---
 name: luna_pinyin.extended
-version: "2014.09.07"
+version: "2020.09.14"
 sort: by_weight
 use_preset_vocabulary: true
 #下面的是本词库包含的所有词库，请根据需要开启/禁用，词条前添删#号即可开启/关闭词库。
@@ -25,8 +25,7 @@ import_tables:
   #- luna_pinyin.practical   #A.挺全面的基本词库，含很丰富基本词条和组句语料，成语、俗语、诗词、人名词条不多。40w
   - luna_pinyin.comprehensive   #B.很全面的一般性综合词库，除基本词条还包含文、史、餐、饮、医、药、生、化、金融、人名等等。80w
   - luna_pinyin.hanyu  #汉语大词典，多为2字词。 2.2w
-  #- luna_pinyin.poetry #常用诗词，来源于唐宋诗词、千家詩、花間集、楚辭、詩經。 2.6w
-  #- luna_pinyin.cn_en    #中英混合词条，含如哆啦A梦之类的词条，目前词库很小。  
+  - luna_pinyin.poetry #常用诗词，来源于唐宋诗词、千家詩、花間集、楚辭、詩經。 2.6w
   - luna_pinyin.net    #网络流行词，网上聊天常用的语句。3.6w
   #- luna_pinyin.gd   #粤语词库，广东人必备。1.2w
   - luna_pinyin.game  #游戏词库、单机/网游及相关词条。7k
@@ -44,5 +43,7 @@ import_tables:
   - luna_pinyin.music   #音乐相关词汇，歌曲、制作人、歌星之类的。2w
   - luna_pinyin.biaoqing  #颜表情，ಠ_ಠ、(｡>ㅅ<｡)、(☍﹏⁰)、(￣_￣|||)..     0.2k
   - luna_pinyin.website   #网站大全，百度、知乎神马的。5k
+  - zhwiki-20200901
+  - moegirl
   #感谢这些词库的原作者和原原作者，来源太广（我电脑里的词库样本怕有120多了），很多作者都不大清楚，总之感谢了。
 ...
