@@ -43,7 +43,7 @@ import_tables:
   - luna_pinyin.music   #音乐相关词汇，歌曲、制作人、歌星之类的。2w
   - luna_pinyin.biaoqing  #颜表情，ಠ_ಠ、(｡>ㅅ<｡)、(☍﹏⁰)、(￣_￣|||)..     0.2k
   - luna_pinyin.website   #网站大全，百度、知乎神马的。5k
-  - zhwiki-20200901
+  - zhwiki-20210401
   - moegirl
   #感谢这些词库的原作者和原原作者，来源太广（我电脑里的词库样本怕有120多了），很多作者都不大清楚，总之感谢了。
 ...
