@@ -33,6 +33,9 @@
 
 ## 引用来源
 
-词库：[http://tieba.baidu.com/p/3974457224](http://tieba.baidu.com/p/3974457224)
+词库：
+
+- zhwiki: [https://github.com/felixonmars/fcitx5-pinyin-zhwiki/](https://github.com/felixonmars/fcitx5-pinyin-zhwiki/)
+- moegirl: [https://github.com/outloudvi/mw2fcitx/](https://github.com/outloudvi/mw2fcitx/)
 
 皮肤：[http://tieba.baidu.com/p/3918630308](http://tieba.baidu.com/p/3918630308)
