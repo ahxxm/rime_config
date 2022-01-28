@@ -22,16 +22,13 @@ use_preset_vocabulary: true
 import_tables:
   - luna_pinyin      #系统自带词库，无意外必须开启。
   - luna_pinyin.basis     #精选的基本词库，搜集于拼音加加、小麥、新酷音、維基百科等。
-  #- luna_pinyin.practical   #A.挺全面的基本词库，含很丰富基本词条和组句语料，成语、俗语、诗词、人名词条不多。40w
+  - luna_pinyin.practical   #A.挺全面的基本词库，含很丰富基本词条和组句语料，成语、俗语、诗词、人名词条不多。40w
   - luna_pinyin.comprehensive   #B.很全面的一般性综合词库，除基本词条还包含文、史、餐、饮、医、药、生、化、金融、人名等等。80w
   - luna_pinyin.hanyu  #汉语大词典，多为2字词。 2.2w
   - luna_pinyin.poetry #常用诗词，来源于唐宋诗词、千家詩、花間集、楚辭、詩經。 2.6w
-  - luna_pinyin.net    #网络流行词，网上聊天常用的语句。3.6w
   #- luna_pinyin.gd   #粤语词库，广东人必备。1.2w
-  - luna_pinyin.name    #人名词库，含中外名人。1w
   - luna_pinyin.idiom   #俗语，如题，含常用俗语，文青必备。6.6w
   - luna_pinyin.classical  #成语，含常用成语、文青标配。2.8w
-  - luna_pinyin.diet   #饮食词汇大全，吃货必备。 15w
   - luna_pinyin.daily   #日常生活用词，衣、食、住、行、地放、称呼等等。31w
   - luna_pinyin.biaoqing  #颜表情，ಠ_ಠ、(｡>ㅅ<｡)、(☍﹏⁰)、(￣_￣|||)..     0.2k
   - zhwiki-20220127
