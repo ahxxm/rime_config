@@ -27,9 +27,7 @@ import_tables:
   #- luna_pinyin.gd   #粤语词库，广东人必备。1.2w
   - luna_pinyin.idiom   #俗语，如题，含常用俗语，文青必备。6.6w
   - luna_pinyin.classical  #成语，含常用成语、文青标配。2.8w
-  - luna_pinyin.daily   #日常生活用词，衣、食、住、行、地放、称呼等等。31w
   - luna_pinyin.biaoqing  #颜表情，ಠ_ಠ、(｡>ㅅ<｡)、(☍﹏⁰)、(￣_￣|||)..     0.2k
   - zhwiki-20220127
   - moegirl
   #感谢这些词库的原作者和原原作者，来源太广（我电脑里的词库样本怕有120多了），很多作者都不大清楚，总之感谢了。
-...
