@@ -2,7 +2,7 @@ name: update-dict
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "30 0 */1 * *"
   workflow_dispatch:
     inputs:
       commit_message:
@@ -30,7 +30,7 @@ jobs:
           wget -O moegirl.dict.yaml "https://github.com/outloudvi/mw2fcitx/releases/download/${{ steps.moegirl.outputs.release }}/moegirl.dict.yaml"
           git add .
           commit_msg="${{ github.event.inputs.commit_message }}"
-          git commit -m "$commit_msg"
+          git commit -m "$commit_msg" || echo "nothing to cmmit"
           git pull origin $(git rev-parse --abbrev-ref HEAD) --unshallow --rebase
       - name: Push changes
         uses: ad-m/github-push-action@master
