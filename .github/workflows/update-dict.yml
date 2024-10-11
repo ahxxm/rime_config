@@ -29,8 +29,8 @@ jobs:
           git config user.email "rime-bot@ahxxm.com"
           wget -O moegirl.dict.yaml "https://github.com/outloudvi/mw2fcitx/releases/download/${{ steps.moegirl.outputs.release }}/moegirl.dict.yaml"
           git add .
-          commit_msg="${{ github.event.inputs.commit_message }}"
-          git commit -m "$commit_msg" || echo "nothing to cmmit"
+          commit_msg="${{ github.event.inputs.commit_message.description }}"
+          git commit -m "$commit_msg" || echo "nothing to commit"
           git pull origin $(git rev-parse --abbrev-ref HEAD) --unshallow --rebase
       - name: Push changes
         uses: ad-m/github-push-action@master
