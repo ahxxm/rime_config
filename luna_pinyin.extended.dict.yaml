@@ -28,6 +28,6 @@ import_tables:
   - luna_pinyin.idiom   #俗语，如题，含常用俗语，文青必备。6.6w
   - luna_pinyin.classical  #成语，含常用成语、文青标配。2.8w
   - luna_pinyin.biaoqing  #颜表情，ಠ_ಠ、(｡>ㅅ<｡)、(☍﹏⁰)、(￣_￣|||)..     0.2k
-  - zhwiki-20230507
+  - zhwiki
   - moegirl
   #感谢这些词库的原作者和原原作者，来源太广（我电脑里的词库样本怕有120多了），很多作者都不大清楚，总之感谢了。
