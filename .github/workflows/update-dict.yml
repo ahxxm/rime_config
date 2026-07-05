@@ -10,12 +10,15 @@ on:
         type: string
         required: false
 
+permissions:
+  contents: write
+
 jobs:
   update-dict-files:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           show-progress: true
       - name: Fetch and Download Latest zhwiki.dict.yaml
@@ -24,10 +27,13 @@ jobs:
           | jq -r '.assets[] | select(.name | test("zhwiki-[0-9]{8}\\.dict")) | .browser_download_url' \
           | sort -r | head -n 1)
           wget "$latest_asset" -O zhwiki.dict.yaml
-      - id: moegirl
-        uses: pozetroninc/github-action-get-latest-release@master
-        with:
-          repository: outloudvi/mw2fcitx
+      - name: Get latest mw2fcitx release
+        id: moegirl
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          release=$(gh release view --repo outloudvi/mw2fcitx --json tagName --jq '.tagName')
+          echo "release=$release" >> "$GITHUB_OUTPUT"
       - name: Add files to git
         id: add_files
         run: |
@@ -39,6 +45,4 @@ jobs:
           git commit -m "$commit_msg" || echo "nothing to commit"
           git pull origin $(git rev-parse --abbrev-ref HEAD) --unshallow --rebase
       - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        run: git push origin HEAD:$(git rev-parse --abbrev-ref HEAD)
